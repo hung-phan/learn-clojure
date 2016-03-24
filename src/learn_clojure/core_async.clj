@@ -41,9 +41,13 @@
   (go (while true (println (<! in)))))
 
 (def in-chan (chan))
+
 (def upper-caser-out (upper-caser in-chan))
+
 (def reverser-out (reverser upper-caser-out))
+
 (printer reverser-out)
 
 (>!! in-chan "redrum")
+
 (>!! in-chan "repaid")
