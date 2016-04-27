@@ -27,6 +27,7 @@ yolo
         'result))
 
 (my-print (+ 1 2))
+(my-print-2 (+ 1 2))
 
 (defmacro my-when
   "Evaluates test. If logical true, evaluates body in an implicit do."
